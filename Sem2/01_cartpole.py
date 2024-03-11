@@ -37,6 +37,7 @@ class Net(nn.Module):
             nn.Linear(obs_size, hidden_size),
             nn.ReLU(),
             nn.Linear(hidden_size, n_actions)
+
         )
 
     def forward(self, x):
