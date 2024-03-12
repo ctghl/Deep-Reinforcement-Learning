@@ -76,6 +76,9 @@ nn.Linear(hidden_size, hidden_size)
 ```
 Значение `hidden_size=64`. 
 
-report_1.md
-![video](https://github.com/ctghl/Deep-Reinforcement-Learning/blob/main/video/rl-video-episode-0.mp4)
+
+
+https://github.com/ctghl/Deep-Reinforcement-Learning/assets/87769076/10cd3a52-01a7-4a2a-a0a7-1ee82791b491
+
+
 
