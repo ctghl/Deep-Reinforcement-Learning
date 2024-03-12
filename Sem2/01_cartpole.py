@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-
+from gymnasium.wrappers import RecordVideo
 """
 The Cross-Entropy Method
 1. Play N number of episodes using our current model and environment.
@@ -35,6 +35,8 @@ class Net(nn.Module):
         super(Net, self).__init__()
         self.net = nn.Sequential(
             nn.Linear(obs_size, hidden_size),
+            nn.ReLU(),
+            nn.Linear(hidden_size, hidden_size),
             nn.ReLU(),
             nn.Linear(hidden_size, n_actions)
 
@@ -123,4 +125,11 @@ if __name__ == "__main__":
         if reward_m > 199:
             print("Solved!")
             break
+    env = gym.make('CartPole-v1', render_mode='rgb_array')
+    env = RecordVideo(env, 'video', episode_trigger=lambda x: x==2)
+    env.reset()
+    env.start_video_recorder()
+    next(episodes_generator(env, net, 1))
+    env.close_video_recorder()
+    env.close()
     writer.close()
