@@ -21,7 +21,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-EXPERIMENT_NAME = "-cartpole_hidden_state_64"  # or -cartpole_net_architecture_v1
+EXPERIMENT_NAME = "-cartpole_hidden_state_64_4"  # or -cartpole_net_architecture_v1
 HIDDEN_SIZE = 64
 BATCH_SIZE = 16
 PERCENTILE = 70
@@ -38,8 +38,9 @@ class Net(nn.Module):
             nn.ReLU(),
             nn.Linear(hidden_size, hidden_size),
             nn.ReLU(),
+            nn.Linear(hidden_size, hidden_size),
+            nn.ReLU(),
             nn.Linear(hidden_size, n_actions)
-
         )
 
     def forward(self, x):
