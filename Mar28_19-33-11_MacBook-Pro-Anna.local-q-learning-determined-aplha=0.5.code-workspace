@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "runs/Mar28_19-33-11_MacBook-Pro-Anna.local-q-learning-determined-aplha=0.5"
+		},
+		{
+			"path": "runs/Mar28_19-33-48_MacBook-Pro-Anna.local-q-learning-determined-aplha=0.5"
+		},
+		{
+			"path": "runs/Mar28_19-35-31_MacBook-Pro-Anna.local-q-learning-determined-aplha=0.5"
+		},
+		{
+			"path": "runs/Mar28_19-36-22_MacBook-Pro-Anna.local-q-learning-determined-aplha=0.5"
+		},
+		{
+			"path": "runs/Mar28_19-37-47_MacBook-Pro-Anna.local-q-learning-determined-aplha=0.5"
+		}
+	],
+	"settings": {}
+}

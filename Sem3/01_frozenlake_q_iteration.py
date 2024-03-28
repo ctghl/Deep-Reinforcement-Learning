@@ -4,8 +4,8 @@ import collections
 from tensorboardX import SummaryWriter
 
 # ENV_NAME = "FrozenLake-v1"
-ENV_NAME = "FrozenLake8x8-v1"      # uncomment for larger version
-GAMMA = 0.95
+ENV_NAME = "FrozenLake8x8-v1"       # uncomment for larger version
+GAMMA = 0.8
 TEST_EPISODES = 20
 EXPERIMENT_NAME = "-q-gamma-0.8"  # or -q-gamma-0.8
 

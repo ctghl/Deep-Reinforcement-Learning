@@ -1,5 +1,6 @@
 import gymnasium as gym
 from gymnasium.wrappers import RecordVideo
+import os
 
 if __name__ == "__main__":
     env = gym.make("CartPole-v1", render_mode='rgb_array')
