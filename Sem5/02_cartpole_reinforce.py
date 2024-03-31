@@ -19,7 +19,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 
 GAMMA = 0.99
-LEARNING_RATE = 0.01
+LEARNING_RATE = 0.1
 EPISODES_TO_TRAIN = 4
 
 

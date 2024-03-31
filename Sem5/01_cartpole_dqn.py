@@ -8,7 +8,7 @@ import torch.nn as nn
 import torch.optim as optim
 import lib
 
-GAMMA = 0.99
+GAMMA = 0.8
 LEARNING_RATE = 0.01
 BATCH_SIZE = 64
 
